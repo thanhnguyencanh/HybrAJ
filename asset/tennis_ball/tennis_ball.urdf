@@ -1,0 +1,27 @@
+<robot name="tennis_ball">
+	<link name="_name">
+		<contact>
+		      <lateral_friction value="1.0"/>
+		      <rolling_friction value="0.02"/>
+		      <inertia_scaling value="3.0"/>
+    		</contact>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<geometry>
+				<mesh filename="tennis_ball/google_16k/textured.obj" scale="0.9 0.9 0.9" />
+			</geometry>
+			<material name="texture">
+				<color rgba="1.0 1.0 1.0 1.0" />
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="tennis_ball/google_16k/textured_vhacd.obj" scale="0.9 0.9 0.9" />
+			</geometry>
+		<origin xyz="0 0 0" rpy="0 0 0" /></collision>
+		<inertial>
+			<mass value="0.05" />
+			<inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05" />
+		</inertial>
+	</link>
+</robot>

@@ -1,0 +1,11 @@
+<config name='Reward'>
+
+	<!-- Reward -->
+	<r0 name='touch' threshold0='0.015' threshold1='0.025' sigma0='0.15' sigma1='0.15' sigma2='1' sigma3='0.9' />
+	<r1 name='pick'  threshold0='0.015' threshold1='0.025' sigma0='0.15' sigma1='0.15' sigma2='1' sigma3='0.9' />
+	<r2 name='move'  threshold0='0.015' threshold1='0.025' sigma0='0.15' sigma1='0.15' sigma2='1' sigma3='0.9' />
+	<r3 name='place' threshold0='0.015' threshold1='0.025' sigma0='0.15' sigma1='0.15' sigma2='1' sigma3='0.9' />
+	<r4 name='push'  threshold0='0.02' threshold1='0.04' sigma0='0.15' sigma1='0.15' sigma2='1' sigma3='0.9' />
+
+<!--2cm - 3cm - 4cm - 5cm - 6cm-->
+</config>
