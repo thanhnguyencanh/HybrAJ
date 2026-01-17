@@ -35,7 +35,7 @@ class ImitationLearning(gym.Env):
         self.observation_space = Box(low=-np.inf, high=np.inf, shape=(37,), dtype=np.float32)
         self.agent_cams = camera.Camera.CONFIG
         self.state = None
-        self.robot = None
+        self.robot = "uf850"
         self.action_type = None
         self.max_episode = None
         self.utils = Utils()  # if moving into reset function -> remove ../ in config path
@@ -228,7 +228,7 @@ class ImitationLearning(gym.Env):
         robot execution function
         rvaluate actions through its subsequent sub-actions
         """
-        continuous_action, discrete_action = action
+        continuous_action, discrete_action = action[:-1], action[-1]
         self._read_state()
         self._save_data(np.float32(pybullet.getLinkState(self.suction.body, 0)[0]), "ee_history")  # shape: [3,])
         self._save_data(self._read_info(self.pick_object_id), "obj_history")
