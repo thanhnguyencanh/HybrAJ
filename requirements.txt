@@ -8,7 +8,7 @@ pybullet==3.2.7
 transforms3d
 tensorboard
 numpy==1.26.4
-moviepy
+moviepy==1.0.3
 opencv-python==4.3.0.36
 pillow
 tqdm
