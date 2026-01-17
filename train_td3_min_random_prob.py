@@ -1,6 +1,6 @@
 import numpy as np
 import gym
-import env2
+import env
 from moviepy.editor import ImageSequenceClip
 from datetime import datetime
 import argparse
