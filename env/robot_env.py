@@ -228,7 +228,7 @@ class ImitationLearning(gym.Env):
         robot execution function
         rvaluate actions through its subsequent sub-actions
         """
-        continuous_action, discrete_action = action[:-1], action[-1]
+        continuous_action, discrete_action = action
         self._read_state()
         self._save_data(np.float32(pybullet.getLinkState(self.suction.body, 0)[0]), "ee_history")  # shape: [3,])
         self._save_data(self._read_info(self.pick_object_id), "obj_history")
